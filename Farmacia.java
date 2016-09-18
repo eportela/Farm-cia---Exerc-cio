@@ -179,21 +179,16 @@ public class Farmacia {
         int encontrado = 0;
         do {
             if(medicamento[i] != null) {
-                System.out.println("caiu no primeiro if");
                 if (medicamento[i].getNome().equals(nome)) {
                     medicamento[i].imprimir();
-                    i++;
-                    return;
-                } else {
+                } else
                     naoEncontrado++;
-                }
-            }else {
-                System.out.println("caiu no else do primeiro if");
-                i++;
-            }
+            }else
+                naoEncontrado++;
+            i++;
         } while (i < MAX);
 
-        if (naoEncontrado <= MAX - 1 )
+        if (naoEncontrado >= MAX )
             JOptionPane.showMessageDialog(null, "O medicamento não foi encontrado");
 
     }
