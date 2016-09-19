@@ -18,9 +18,9 @@ public class Farmacia {
             String op = JOptionPane.showInputDialog("\t\tDrogarias CoffeeCode\n\n"
                     + "[1] - Cadastrar Medicamentos\n"
                     + "[2] - Consultar Medicamentos\n"
-                    + "[3] - Adiciona na cesta\n"
-                    + "[4] - Retira da cesta\n"
-                    + "[5] - Realiza Pagamento\n"
+                    + "[3] - Adicionar na cesta\n"
+                    + "[4] - Retirar da cesta\n"
+                    + "[5] - Realizar Pagamento\n"
                     + "[6] - Sair\n\n");
             try {
                 switch (Integer.parseInt(op)) {
